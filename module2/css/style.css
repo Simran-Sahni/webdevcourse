@@ -1,0 +1,100 @@
+
+/********** Base styles **********/
+*{
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+h2{
+	text-align: center;
+	color: Black;
+	font-family: Georgia,serif;
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+.text{
+	padding:15px;  
+	margin:20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+section{
+	float:left;
+	width:32%
+	
+}
+
+#first{
+	background-color: grey;
+	border:2px solid black;
+	position: relative;
+	/*margin-right: 10px;
+	margin-left: 10px; */
+	margin:5px;
+}
+#second
+{
+	background-color: orchid;
+	border:2px solid black;
+	position: relative;
+	/*margin-right: 10px;
+	margin-left: 10px; */
+	margin:5px;
+}
+#third
+{
+	background-color: blueviolet;
+	border:2px solid black;
+	position: relative;
+	margin:5px;
+}
+
+#ptitle1,#ptitle2,#ptitle3{
+	position: absolute;
+	right:0px;
+	text-align: centre;
+	width:fit-content;
+	border:2px solid black;
+	border-right: 0px;
+	padding:5px;
+	margin-top:0px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: 900;
+	color: whitesmoke;
+	background-color: brown;
+}
+
+/********** Desktop styles **********/
+
+@media (min-width:992px){
+    section{
+		width:32%;
+		float:left;
+	}
+}
+
+/********** Desktop styles **********/
+@media (min-width:768px) and (max-width:991px){
+ section{
+	 width:45%;
+	 float:left;
+	 margin:auto;
+ }
+
+ #third{
+	 width:100%;
+	 margin-top:5px;
+ }
+}
+
+/********** Mobile styles **********/
+@media (max-width:767px)
+{
+	section{
+		width:100%;
+		float:left;
+	}
+}
